@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang = "en">
+    <head>
+        <meta charset ="UTF-8">
+        <meta name = "viewport" content="width = device-width">
+        <link rel ="stylesheet" href="style.css">
+        <title>Contact</title>
+    </head>
+<body>
+    <header>
+        <h1>Contact me</h1>
+    </header>
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+    <nav aria-label="Main navigation">
+        <a href ="index.html">[Return to the Main Page]</a>
+    </nav>
+  <main id="main-content">
+    <h1>Contact</h1>
+    <section>
+        <h1>External Contact Info:</h1>
+        <ul>
+            <li><a href="#">Email: david.minciuna06@e-uvt.ro</a></li>
+            <li>Telefon: 07N-amtelefon</li>
+        </ul>
+    </section>
+    <section>
+        <form method="post" action="#" aria-label="Forum Contact">
+        <fieldset>
+            <legend>Your Details</legend>
+            <label for="name">Full name (Mandatory)</label>
+            <input type="text" id="name" name="name" required>
+            <label for="email">Email (Mandatory)</label>
+            <input type="email" id="email" name="email" required>
+            <label for="phone">Phone Number (Not Mandatory)</label>
+            <input type="number" id="phone" name="phone">
+        </fieldset>
+        <fieldset>
+            <legend>Your Details</legend>
+            <label for = "subject">Subject </label>
+            <input type="text" id="subject" name="subject" required aria-describedby="subject-hint">
+            <p id="subject-hint" class="form-hint">e.g. Do you still play Minecraft Skyblock on Hypixel?</p>
+            <label for="mess">Message </label>
+            <textarea id="mess" name="message" rows="5" required></textarea>
+        </fieldset>
+        <button type="submit">Send message</button>
+        </form>
+    </section>
+  </main>
+</body>
